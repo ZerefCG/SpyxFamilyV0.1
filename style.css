@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PROBANDO VARIABLES/TESTING VARS */
+
+:root
+{
+    --header-background:#2f353a;
+    --background-sectiontest:rgba(47,53,58,0.4);
+}
+
+
+
+body{
+font-family: 'Montserrat', sans-serif;
+font-size: 1rem;
+background-image: url(img/spy-x-family-poster-hd-wallpaper-uhdpaper.com-501@1@g.jpg) ;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+
+}
+h2{ color: white;
+    text-shadow:-1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black,-1px 1px 0 black;
+    font-size: 3rem;
+    font-weight: 800;
+ 
+}
+
+p{  color: white;
+    line-height: 25px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow:-1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black,-1px 1px 0 black;
+ 
+}
+
+main{
+    width: 100%;
+    height: 80%;
+    
+}
+/* HEADER */
+header .navegacion ul a{
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+header .navegacion ul a:hover{
+    text-decoration: underline;
+}
+
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+header .header-logo{
+   width: 50vw;
+   height: 15vh;
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+header .header-logo img{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+   
+}
+
+header .navegacion{
+   width: 35%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+header .navegacion ul{
+ width: 100%;
+ display: flex;
+ list-style: none;
+ justify-content: space-evenly;
+ background-color:rgba(47,53,58,0.5);
+ padding: 5px;
+ border-radius: 5px;
+ margin-bottom: 5px;
+ flex-wrap: wrap;
+    
+}
+
+header .navegacion a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* FIN DEL HEADER */
+
+.presentacion{
+    width: 100%;
+    background-color:rgba(47,53,58,0.9);
+    margin: 0 auto;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+ 
+    
+}
+
+.presentacion .descripcion-img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    
+    
+    
+}
+
+.presentacion .descripcion-img img{
+    width: 100%;
+    
+    margin: 2px;
+}
+
+
+/* DESCRIPCION DE LA HISTORIA PRIMERA SECCION */
+
+.presentacion .descripcion-historia{
+   color: white;
+   text-shadow:-1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+   -1px -1px 0 black,-1px 1px 0 black;
+   padding: 10px 25px;
+}
+
+.presentacion .descripcion-historia h2{
+    margin-bottom: 10px;
+}
+
+/* EMPIEZA LA DESCRIPCION DE PERSONAJES */
+
+.personajes{
+    width: 100%;
+    background-color:rgba(47,53,58,0.9) ;
+}
+
+.personajes .loid-forger{
+    width: 100%;
+    display: flex;
+    
+}
+
+.personajes h2{
+    margin-bottom: 50px;
+}
+
+
+.descripcionloid{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.imagen-hover{
+    width:700px;
+    height:600px;
+    
+}
+
+.personajes .loid-forger .izquierda{
+    background-image: url(img/loidp´ng.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/* TERMINA LOID FORGER */
+
+/* EMPIEZA YORU BRIAR */
+
+.personajes .yor-briar{
+  width: 100%;
+  display: flex;
+}
+
+
+.descripcion-yor{
+    align-self: center;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    padding-left: 20px;
+    text-align: right;
+}
+
+
+
+
+.personajes .yor-briar .derecha{
+    background-image: url(img/Yor.Briar.full.3493455.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 100%;
+    order: 2;
+}
+
+
+
+/* EMPIEZA ANYA FORGER */
+
+.personajes .anya-forger{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.personajes .anya-descripcion{
+    text-align: center;
+    margin-top: -30px;
+}
+
+.personajes .anya-forger .centro{
+    background-image: url(img/5d7c3f481635e959a3509be311aa1aa61649276731_main.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+/* EFECTOS HOVER DE LOS PERSONAJES */
+
+.personajes .loid-forger .izquierda:hover{
+    background-image: url(img/Loid.Forger.full.3493460.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+   
+}
+
+.personajes .yor-briar .derecha:hover{
+    background-image: url(img/Yor.Briar.full.3493456.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.personajes .anya-forger .centro:hover{
+    background-image:url(img/f613a1a722cf02ce8a3e51a6db9573711649276771_main.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+}
